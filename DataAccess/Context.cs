@@ -13,7 +13,7 @@ namespace DataAccess
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-               @"Server=serverTemplate;Initial Catalog=Template;Persist Security Info=False;User ID=template;Password=template;");
+               @"Server=database-paintmeup.cbmgpelgfj8a.us-east-1.rds.amazonaws.com;Initial Catalog=PaintMeup;Persist Security Info=False;User ID=admin;Password=123456789;");
         }
 
 
@@ -24,6 +24,7 @@ namespace DataAccess
         }
 
         public DbSet<Template> Template { get; set; }
+        public DbSet<Image> Image { get; set; }
 
     }
 }

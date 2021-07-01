@@ -70,6 +70,7 @@ namespace TemplateApiDDD
 
             services.AddScoped<Context, Context>();
             services.AddTransient<TemplateService, TemplateService>();
+            services.AddTransient<ImageService, ImageService>();
 
             services.AddSwaggerGen(x =>
             {

@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TemplateApiDDD.Entity\Entity.csproj" />
+    <ProjectReference Include="..\PaintMeUp.Entity\Entity.csproj" />
   </ItemGroup>
 
   <ItemGroup>
